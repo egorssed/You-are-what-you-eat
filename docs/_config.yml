@@ -22,8 +22,8 @@ title: You are what you eat - Relating Demographic Data to Food Consumption Habi
 email: a.glavackij@gmx.de
 description: >- # this means to ignore newlines until "baseurl:"
   A data story exploring the relation between demographic markers  and food consumption habits in London.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://alxglvckij.github.io/you-are-what-you-eat/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/you-are-what-you-eat" # the subpath of your site, e.g. /blog
+url: "https://alxglvckij.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  alxglvckij
 
