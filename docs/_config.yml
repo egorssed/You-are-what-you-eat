@@ -23,7 +23,7 @@ author: Alexander Glavackij
 email: a.glavackij@gmx.de
 description: >- # this means to ignore newlines until "baseurl:"
   A data story exploring the relation between demographic markers  and food consumption habits in London.
-baseurl: "/you-are-what-you-eat/" # the subpath of your site, e.g. /blog
+baseurl: "/you-are-what-you-eat" # the subpath of your site, e.g. /blog
 url: "https://alxglvckij.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  alxglvckij
@@ -31,27 +31,11 @@ github_username:  alxglvckij
 
 # Build settings
 # theme: minima
-theme: beautiful-jekyll-theme
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
-  
- # Personalize the colours in your website. Colour values can be any valid CSS colour
-
-navbar-col: "#EAEAEA"
-navbar-text-col: "#404040"
-navbar-border-col: "#DDDDDD"
-page-col: "#FFFFFF"
-text-col: "#404040"
-link-col: "#008AFF"
-hover-col: "#0085A1"
-footer-col: "#EAEAEA"
-footer-text-col: "#777777"
-footer-link-col: "#404040"
-
-# Ruby Date Format to show dates of posts
-date_format: "%B %-d, %Y"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

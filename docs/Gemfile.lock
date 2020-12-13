@@ -9,12 +9,6 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    beautiful-jekyll-theme (5.0.0)
-      jekyll (~> 3.8)
-      jekyll-paginate (~> 1.1)
-      jekyll-sitemap (~> 1.4)
-      kramdown (~> 2.3.0)
-      kramdown-parser-gfm (~> 1.1)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -262,7 +256,6 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  beautiful-jekyll-theme (= 5.0.0)
   github-pages
   jekyll-feed (~> 0.12)
   tzinfo (~> 1.2)
