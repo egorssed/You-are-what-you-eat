@@ -2,3 +2,13 @@
 ---
 
 @import "{{ site.theme }}";
+
+#images{
+    text-align:center;
+    margin:50px auto; 
+}
+#images a{
+    margin:0px 20px;
+    display:inline-block;
+    text-decoration:none;
+}
