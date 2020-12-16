@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## You are what you eat ... are you though?
+## You are what you eat ...
 
 You are what you eat - an idiom surely most of us have already heard at some point in our life. Be it as a child when we did not want to eat the broccoli our mother lovingly prepared, or from your colleague at work who just discovered veganism.
 This idiom simply states that "the food one eats has a bearing one one's state of mind and health." [[1]](https://www.phrases.org.uk/meanings/you-are-what-you-eat.html)
@@ -82,7 +82,9 @@ To find the most important demographic markers, we build a prediction model for 
 
 ## Finding the most important features
 
-## A Case Study: Developing a Marketing Strategy 
+## A Case Study: Developing a Marketing Strategy
+
+Some sort of chicken product: ward with high protein and low fat consumption
 
 
 
