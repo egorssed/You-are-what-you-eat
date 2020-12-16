@@ -211,24 +211,37 @@ def hist():
                                   args=[{'x': [df_ward_atlas[column], df_ward_atlas[column]], }],
                                   )
                              )
+    # updatemenu[0]['buttons'] = buttons_atlas
+    # updatemenu[0]['x'] = 0.15  # Some styling
+    # updatemenu[0]['y'] = 1.12  # Some styling
+    # updatemenu[1]['buttons'] = buttons_wards
+    # updatemenu[1]['x'] = 0.33  # Some styling
+    # updatemenu[1]['y'] = 1.12  # Some styling
     updatemenus = [{'buttons': buttons_atlas,
                     'direction': 'down',
-                    'showactive': True, },
+                    'showactive': True,
+                    'x': 0.5,
+                    'y': 1.05, },
                    {'buttons': buttons_wards,
                     'direction': 'down',
-                    'showactive': True, }
+                    'showactive': True,
+                    'x': 0.5,
+                    'y': 1.05
+                    }
                    ]
-
     fig.update_layout(
+
         template="simple_white",
         updatemenus=updatemenus,
         title_text='Contour Plot Demographics vs. Nutrients',  # title of plot
         xaxis_title_text='Average Nutrient Energy Content [kcal]',
         yaxis_title_text='Demographic',
+        title_x=0.5,
+        title_y=1
     )
     # fig.show()
-    to = py.plot(fig, filename="demograph_vs_atlas", auto_open=True)
-    print(to)
+    to = py.plot(fig, filename="demograph_vs_atlas", auto_open=False)  # use auto_open=False for plot to be able to be embedded
+    # print(to)
 
 
 def corrs_heatmap():
@@ -254,4 +267,5 @@ def corrs_heatmap():
 
 
 if __name__ == "__main__":
-    corrs_heatmap()
+    # corrs_heatmap()
+    hist()

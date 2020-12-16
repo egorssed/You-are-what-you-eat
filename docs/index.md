@@ -56,13 +56,8 @@ Thus, we assume that other demographic markers did not significantly change as w
 
 ## Teenagers love Carbs
 
-<div>
-    <a href="https://plotly.com/~aglavac/7/?share_key=EFW3OwuAkEMO1iAVm8tNyv" target="_blank" title="demograph_vs_atlas" style="display: block; text-align: center;"><img src="https://plotly.com/~aglavac/7.png?share_key=EFW3OwuAkEMO1iAVm8tNyv" alt="demograph_vs_atlas" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
-    <script data-plotly="aglavac:7" sharekey-plotly="EFW3OwuAkEMO1iAVm8tNyv" src="https://plotly.com/embed.js" async></script>
-</div>
-
-<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plot.ly/~aglavac/7.embed/"></iframe>
-
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~aglavac/7.embed">
+</iframe>
 
 Looking at the contour plot, we can see some interesting correlations.
 Interestingly, the amount of carbohydrates consumed in a ward seems to be positively correlated with the number of people with lower qualifications and with younger people under the age of 15.
