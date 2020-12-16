@@ -16,7 +16,7 @@ There certainly exist multiple ways of defining a person, however, the aforement
 
 We are interested in the influence of demographic data on food composition.
 Can food consumption habits be mapped to certain groups of people?
-In this data story, we are going to answer this question in two parts: first, we will explore relation between each individual demographic marker and food consumption habits.
+In this data story, we are going to answer this question in two parts: first, we will explore relations between each individual demographic marker and food consumption habits.
 Afterward, we will investigate how well we can predict food consumption habits from demographic markers.
 These analyses are interesting, but not really useful without a specific usecase.
 Therefore, we are going to apply our newly-gained understanding and develop a marketing strategy for a new protein bar!
@@ -54,11 +54,50 @@ Therefore, we exclude these wards for the following analyses.
 The remaining wards do not seem to have changed much in terms of population numbers.
 Thus, we assume that other demographic markers did not significantly change as well.
 
+## Teenagers love Carbs
 
+<div>
+    <a href="https://plotly.com/~aglavac/7/?share_key=EFW3OwuAkEMO1iAVm8tNyv" target="_blank" title="demograph_vs_atlas" style="display: block; text-align: center;"><img src="https://plotly.com/~aglavac/7.png?share_key=EFW3OwuAkEMO1iAVm8tNyv" alt="demograph_vs_atlas" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+    <script data-plotly="aglavac:7" sharekey-plotly="EFW3OwuAkEMO1iAVm8tNyv" src="https://plotly.com/embed.js" async></script>
+</div>
+
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plot.ly/~aglavac/7.embed/"></iframe>
+
+
+Looking at the contour plot, we can see some interesting correlations.
+Interestingly, the amount of carbohydrates consumed in a ward seems to be positively correlated with the number of people with lower qualifications and with younger people under the age of 15.
+Furthermore, wealthier wards (indicated by a higher median and mean household income) seem to consume more protein, wards with more non-religious seem to consume more alcohol.
+These findings are quite intereting, thus, we want to explore these correrlations further.
+
+## Correlating Demographics and Food Habits
+
+The qualitative analysis is interesting, but as Data Scientists, we love numbers and hard facts.
+Thus, we calculate the Spearman Rank coefficient between the nutrients and the demographic markers and their corresponding p-values, to estimate whether the correlations are actually significant.
 <div id="images"> 
 	<img src="assets/images/feat_corrs.png">
-	<div class="caption">Relative population difference of all wards between 2011/2014 and 2013/2014.</div>
+	<div class="caption">Spearman Rank correlations of demographic markers vs. nutrients (left) and their corresponding p-values (right). Significant p-values are indicated with blue.</div>
 </div>
+Judging by the p-values, most correlations are significant.
+`Well-Being` is not a demographic marker showing significant correlations with nutrients, a similar conclusion can be made for `Aged 65+` and `Born in UK`.
+The prevalence of `White` is positively correlated with the energy provided by protein, alcohol and fibre.
+Wards with less religious people (indicated by a higher fraction of `No religion`) seem to consume more alcohol, more fibre and more protein.
+All in all, the nutrients show many significant correlations with demographic markers.
+However, it is difficult to judge which demographic markers can actually best predict each nutrient.
+To find the most important demographic markers, we build a prediction model for each nutrient using the demographics as independent variables.
+
+## Finding the most important features
+
+## A Case Study: Developing a Marketing Strategy 
+
+
+
+
+ 
+
+
+
+
+
 
 
 
