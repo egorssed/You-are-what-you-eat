@@ -12,3 +12,44 @@
     display:inline-block;
     text-decoration:none;
 }
+.page-header {
+
+  background-image: url(https://images.pexels.com/photos/1775043/pexels-photo-1775043.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  background-size:     cover;                      /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center center;
+}
+
+.main-content {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #000000;
+  }
+}
+.project-name {
+  color: #000000;
+  text-shadow: white 0px 0px 30px;
+}
+
+.project-tagline {
+  color: #000000;
+  text-shadow: white 0px 0px 10px;
+  font-weight: bold;
+  opacity: 1
+}
+.btn {
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.2);
+  text-shadow: white 0px 0px 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+}
