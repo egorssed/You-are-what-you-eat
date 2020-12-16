@@ -35,22 +35,23 @@ h6 {
   }
 }
 .project-name {
-  color: #000000;
-  text-shadow: white 0px 0px 30px;
+  color: rgb(255, 255, 255);
+  text-shadow: black 3px 3px 7px;
 }
 
 .project-tagline {
-  color: #000000;
-  text-shadow: white 0px 0px 10px;
+  color: rgb(255, 255, 255);
+  text-shadow: black 2px 2px 5px;
   font-weight: bold;
   opacity: 1
 }
 .btn {
-  color: rgba(0, 0, 0, 1);
-  background-color: rgba(255, 255, 255, 0.5);
-  border-color: rgba(255, 255, 255, 0.2);
-  text-shadow: white 0px 0px 10px;
+  color: rgba(255, 255, 255, 1);
+  text-shadow: black 2px 2px 5px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.5);
   border-style: solid;
   border-width: 1px;
   border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 }
