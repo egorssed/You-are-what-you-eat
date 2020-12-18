@@ -15,28 +15,14 @@ chart_studio.tools.set_credentials_file(username=user, api_key=api_key)
 import pickle
 from os.path import join
 
-# data
-FOLDER_PATH = 'data'
-PURCHASES_PATH = 'area_level_purchases'
-OSWARD_GROCERY = 'year_osward_grocery.csv'
-WARD_ATLAS = 'ward-atlas-data.csv'
 
-ward_data_path = join(FOLDER_PATH, PURCHASES_PATH, OSWARD_GROCERY)
-atlas_data_path = join(FOLDER_PATH, WARD_ATLAS)
 with open("atlas.pickle", 'rb') as f:
-    df_atlas = pickle.load(f)
-with open("atlas_log.pickle", 'rb') as f:
-    df_atlas_log = pickle.load(f)
-df_ward = pd.read_csv(ward_data_path, sep=',', index_col=0)
-df_ward_atlas = pd.merge(df_ward, df_atlas, how='inner', left_index=True, right_index=True, validate='1:1')
+    df_ward_atlas = pickle.load(f)
+
 nutrients = ['energy_protein', 'energy_carb', 'energy_fibre', 'energy_fat', 'energy_alcohol',
              'h_nutrients_calories_norm']
 label_nutrients = ['Energy Protein', 'Energy Carbs', 'Energy Fibre', 'Energy Fat', 'Energy Alcohol',
                    'Entropy Nutrients Calories']
-with open("corr_selected.pickle", "rb") as f:
-    corr_selected = pickle.load(f)
-with open("corr_p_selected.pickle", "rb") as f:
-    corr_p_selected = pickle.load(f)
 
 
 def hist_no_log():
