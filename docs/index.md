@@ -60,7 +60,7 @@ This leaves us in total with 506 wards in the data set.
 
 To get a first glimpse at the interactions between the demographics and the nutrients, we merge boith data sets and visualize each marker against each nutrient.
 <div id="images"> 
-<iframe  width="900" height="800" frameborder="0" scrolling="no" src="assets/plots/demo_vs_atlas.html">
+<iframe  width="900" height="800" frameborder="0" scrolling="no" src="assets/plots/demo_vs_nutrients.html">
 </iframe>
 <div class="caption">Contour plot of nutrients vs. demographics. The x-axis denotes the energy content of the selected nutrient in the average food product, the y-axis shows the selected demographic marker.</div>
 </div>
