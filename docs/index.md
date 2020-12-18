@@ -27,12 +27,13 @@ In this data story we explore the relation between food consumption habits and p
 For our analyses we use two data sets: the [Tesco 1.0 Grocery](https://www.nature.com/articles/s41597-020-0397-7) data set and the [ward profiles](https://data.london.gov.uk/dataset/ward-profiles-and-atlas) published in 2015 by the government of the United Kingdom.
 The Tesco data set captures provides an aggregated view of food purchases for the year 2014 in Tesco supermarkets in London.
 For every ward, it contains the nutrient content of the typical food product - in other words, all purchased products of 2014 are aggregated to yield the "average" food product of a ward.
+The average food product is then given by the energy content of each individual nutrient - i.e. carbohydrates, protein, fibre, alcohol, and fats.
 <div id="images"> 
 	<img src="assets/images/pie.png">
 	<div class="caption">Nutrients of the average food product in the ward "Gascoigne". Looks yummy, doesn't it?</div>
 </div>
 
-The ward profiles provide a range of demographic data, such as population age distribution, ethnicities, general fertility rate, ambulance callouts and many more.
+The ward profiles provide a range of demographic data, such as population age distribution, ethnicities, general fertility rate, ambulance callouts and many more for 625 wards.
 The ward profiles provide 1000 features! We therefore limit our analyses to the following features: *age distribution*, *ethnicity*, *religion*, *qualification*, *household income*, *happiness*, *Health*, and *Happiness*. 
 However, one problem arises: most of these indicators were either collected in 2013, or with the nationwide census of 2011.
 The tesco data set contains grocery data from 2014, that's a 1- or 3-year difference!
@@ -53,15 +54,19 @@ This change in population might also influence other demographic factors.
 Therefore, we exclude these wards for the following analyses.
 The remaining wards do not seem to have changed much in terms of population numbers.
 Thus, we assume that other demographic markers did not significantly change as well.
+This leaves us in total with 506 wards in the data set.
 
 ## Teenagers love Carbs
 
+To get a first glimpse at the interactions between the demographics and the nutrients, we merge boith data sets and visualize each marker against each nutrient.
+<div id="images"> 
 <iframe  width="900" height="800" frameborder="0" scrolling="no" src="assets/plots/demo_vs_atlas.html">
 </iframe>
-
+<div class="caption">Contour plot of nutrients vs. demographics. The x-axis denotes the energy content of the selected nutrient in the average food product, the y-axis shows the selected demographic marker.</div>
+</div>
 Looking at the contour plot, we can see some interesting correlations.
 Interestingly, the amount of carbohydrates consumed in a ward seems to be positively correlated with the number of people with lower qualifications and with younger people under the age of 15.
-Furthermore, wealthier wards (indicated by a higher median and mean household income) seem to consume more protein, wards with more non-religious seem to consume more alcohol.
+Furthermore, wealthier wards (indicated by a higher median and mean household income) seem to consume more protein, wards with more non-religious people seem to consume more alcohol.
 These findings are quite intereting, thus, we want to explore these correrlations further.
 
 ## Correlating Demographics and Food Habits
