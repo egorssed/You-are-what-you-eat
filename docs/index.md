@@ -56,7 +56,7 @@ Thus, we assume that other demographic markers did not significantly change as w
 
 ## Teenagers love Carbs
 
-<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~aglavac/7.embed">
+<iframe  width="900" height="800" frameborder="0" scrolling="no" src="assets/plots/demo_vs_atlas.html">
 </iframe>
 
 Looking at the contour plot, we can see some interesting correlations.
